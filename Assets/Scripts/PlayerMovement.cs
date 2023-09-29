@@ -20,7 +20,7 @@ public class PlayerMovement : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    {   // creates a sphere
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundLayerMask);
 
         if (isGrounded && velocity.y < 0)
